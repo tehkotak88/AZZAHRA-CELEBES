@@ -144,14 +144,6 @@ const Navigation = () => {
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
             className="md:hidden fixed inset-0 z-[9998] bg-black flex flex-col pt-24 px-6 pb-8 overflow-y-auto"
           >
-            {/* Header for visual confirmation of update */}
-            <div className="mb-8 border-b border-white/10 pb-4 flex justify-between items-end">
-              <div>
-                <p className="text-[10px] font-black uppercase tracking-[0.4em] text-red-500">Navigation Menu</p>
-                <p className="text-[8px] font-bold text-white/20 mt-1 uppercase">Version 2.1 - Build Stable</p>
-              </div>
-              <div className="text-[8px] font-black text-white/10 uppercase tracking-tighter">AZZAHRA CELEBES PROJ.</div>
-            </div>
 
             <div className="flex flex-col gap-1">
               {[
