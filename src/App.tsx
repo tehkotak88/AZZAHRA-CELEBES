@@ -907,10 +907,10 @@ export default function App() {
             initial={{ scale: 0.9, opacity: 0, y: 40 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 40 }}
-            className="bg-[#1a3d24] max-w-md w-full rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl relative"
+            className="bg-[#1a3d24] max-w-sm w-full rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl relative"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="aspect-square p-8 md:p-12 bg-white flex items-center justify-center relative">
+            <div className="h-64 md:h-72 p-8 bg-white flex items-center justify-center relative">
               <img 
                 src={selectedProduct.src} 
                 alt={selectedProduct.label}
@@ -924,16 +924,16 @@ export default function App() {
                 <X className="w-5 h-5 md:w-6 md:h-6" />
               </button>
             </div>
-            <div className="p-6 md:p-8 text-center bg-gradient-to-b from-white/5 to-transparent">
+            <div className="p-6 text-center bg-gradient-to-b from-white/5 to-transparent">
               <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em] text-[#FFCC99] block mb-2">{selectedProduct.price}</span>
-              <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 md:mb-6">{selectedProduct.label}</h3>
-              <p className="text-white/70 leading-relaxed text-sm md:text-base font-medium px-2">
+              <h3 className="text-xl md:text-2xl font-serif font-bold text-white mb-3 md:mb-4">{selectedProduct.label}</h3>
+              <p className="text-white/70 leading-relaxed text-xs md:text-sm font-medium px-2">
                 {selectedProduct.desc}
               </p>
-              <div className="mt-8 md:mt-10">
+              <div className="mt-6 md:mt-8">
                 <button 
                   onClick={() => setSelectedProduct(null)}
-                  className="w-full bg-[#FFCC99] hover:bg-[#ffe0b3] text-[#1a3d24] py-4 rounded-xl font-bold uppercase tracking-widest text-[10px] md:text-xs transition-all shadow-lg"
+                  className="w-full bg-[#FFCC99] hover:bg-[#ffe0b3] text-[#1a3d24] py-3.5 rounded-xl font-bold uppercase tracking-widest text-[10px] transition-all shadow-lg"
                 >
                   Return to Catalog
                 </button>
