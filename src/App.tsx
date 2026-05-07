@@ -497,17 +497,17 @@ export default function App() {
                 </div>
 
                 {/* Info Area */}
-                <div className="bg-[#12301c] px-6 py-5 flex flex-col gap-3 border-t-[5px] border-[#FFCC99] flex-1">
-                  {/* Price — large & bold */}
-                  <div className="flex items-center gap-2">
-                    <span className="bg-red-600 text-white text-lg md:text-xl font-black px-4 py-1.5 rounded-xl shadow-lg shadow-red-900/40 tracking-wide">
-                      {product.price}
-                    </span>
-                  </div>
-                  {/* Product Name — very large */}
+                <div className="bg-[#12301c] px-6 py-6 flex flex-col gap-2 border-t-[5px] border-[#FFCC99] flex-1">
+                  {/* Product Name — now on top */}
                   <h4 className="text-xl md:text-2xl font-black text-white group-hover:text-[#FFCC99] transition-colors duration-300 leading-snug">
                     {product.label}
                   </h4>
+                  {/* Price — now plain text below name */}
+                  <div className="flex items-center gap-2">
+                    <span className="text-red-500 text-lg md:text-xl font-black tracking-wide">
+                      {product.price}
+                    </span>
+                  </div>
                   {/* Description */}
                   <p className="text-sm text-white/60 leading-relaxed group-hover:text-white/80 transition-colors duration-300 line-clamp-2">
                     {product.desc}
