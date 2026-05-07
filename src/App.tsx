@@ -559,7 +559,7 @@ export default function App() {
               <div className="absolute inset-0 bg-white/10 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
               <h3 className="text-2xl font-bold text-red-600 mb-4 relative z-10">Quality Control</h3>
               <p className="text-sm text-black/70 leading-relaxed relative z-10 font-medium">
-                Kami memastikan setiap proses dari awal hingga finishing memenuhi standar kualitas terbaik untuk hasil yang maksimal.
+                Kami bekerja sama dengan CV. Sulawesi Interior untuk memastikan setiap proses dari awal hingga finishing memenuhi standar kualitas terbaik untuk hasil yang maksimal.
               </p>
             </motion.div>
 
@@ -798,13 +798,13 @@ export default function App() {
               {/* Top Row: Contact Info */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 {/* Phone — tap to call */}
-                <a href="tel:+6281908910445" className="flex items-center gap-4 group/contact hover:opacity-90 transition-opacity">
+                <a href="tel:+6287841780609" className="flex items-center gap-4 group/contact hover:opacity-90 transition-opacity">
                   <div className="w-12 h-12 bg-white/5 group-hover/contact:bg-red-600/20 rounded-full flex items-center justify-center shrink-0 transition-colors">
                     <Phone className="w-5 h-5 text-[#FFCC99]" />
                   </div>
                   <div>
                     <p className="text-[14px] font-bold text-red-600">Phone</p>
-                    <p className="text-[13px] text-white/70 group-hover/contact:text-white tracking-tight leading-none mt-1 transition-colors">(+62) 819 0891 0445</p>
+                    <p className="text-[13px] text-white/70 group-hover/contact:text-white tracking-tight leading-none mt-1 transition-colors">(+62) 878 4178 0609</p>
                   </div>
                 </a>
                 {/* Email — tap to open Gmail */}
