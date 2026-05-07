@@ -288,12 +288,8 @@ export default function App() {
             </motion.p>
           </div>
 
-          {/* Moved Widget outside of text-left container for better mobile flow */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-12 flex flex-col md:flex-row w-full max-w-4xl bg-black/80 md:bg-black/40 backdrop-blur-xl md:backdrop-blur-md rounded-2xl p-6 items-stretch md:items-center justify-between gap-4 md:gap-2 border border-white/10 text-left shadow-2xl relative z-20"
+          <div 
+            className="mt-10 mb-6 flex flex-col md:flex-row w-full max-w-4xl bg-[#111] rounded-2xl p-6 items-stretch md:items-center justify-between gap-4 md:gap-2 border border-white/10 text-left shadow-2xl relative z-30"
           >
             <div className="flex-1 border-b md:border-b-0 md:border-r border-white/20 px-4 pb-4 md:pb-0">
               <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Kategori Jasa</label>
@@ -312,18 +308,16 @@ export default function App() {
               <p className="text-[12px] font-bold italic text-white leading-tight">Proyek Strategis</p>
             </div>
             <div className="ml-0 md:ml-2 mt-2 md:mt-0">
-              <motion.a 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              <a 
                 href="https://wa.me/6287841780609?text=Halo%20Azzahra%20Celebes,%20saya%20ingin%20konsultasi%20mengenai%20pengadaan%20barang/jasa."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#C1211E] hover:bg-[#A01B18] text-white px-6 py-4 md:py-3 rounded-lg font-black text-[10px] tracking-widest uppercase transition-all shadow-lg shadow-black/40 inline-block w-full md:w-auto text-center"
+                className="bg-[#C1211E] hover:bg-[#A01B18] text-white px-6 py-4 md:py-3 rounded-lg font-black text-[10px] tracking-widest uppercase transition-all shadow-lg shadow-black/40 block md:inline-block w-full md:w-auto text-center"
               >
                 Konsultasi
-              </motion.a>
+              </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
