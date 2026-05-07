@@ -274,7 +274,7 @@ export default function App() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-6xl md:text-8xl font-bold leading-[1.1] mb-8 tracking-tight uppercase text-white"
+              className="text-4xl md:text-8xl font-bold leading-[1.1] mb-8 tracking-tight uppercase text-white"
             >
               Pengadaan <br /> <span className="font-serif italic font-light lowercase text-white">Barang dan Jasa</span> Profesional
             </motion.h1>
@@ -292,32 +292,32 @@ export default function App() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-              className="hidden md:flex w-full max-w-4xl bg-black/40 backdrop-blur-md rounded-2xl p-6 items-center justify-between gap-2 border border-white/10 text-left shadow-2xl transition-transform hover:scale-[1.01] duration-500"
+              className="flex flex-col md:flex-row w-full max-w-4xl bg-black/40 backdrop-blur-md rounded-2xl p-6 items-stretch md:items-center justify-between gap-4 md:gap-2 border border-white/10 text-left shadow-2xl transition-transform hover:scale-[1.01] duration-500"
             >
-              <div className="flex-1 border-r border-white/20 px-4">
+              <div className="flex-1 border-b md:border-b-0 md:border-r border-white/20 px-4 pb-4 md:pb-0">
                 <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Kategori Jasa</label>
                 <p className="text-[12px] font-bold text-white leading-tight">Desain & Konstruksi Interior</p>
               </div>
-              <div className="flex-1 border-r border-white/20 px-4">
+              <div className="flex-1 border-b md:border-b-0 md:border-r border-white/20 px-4 pb-4 md:pb-0">
                 <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Kategori Barang</label>
                 <p className="text-[12px] font-bold text-white leading-tight">Alat Tulis Kantor, Kesehatan, & Lainnya</p>
               </div>
-              <div className="flex-1 border-r border-white/20 px-4">
+              <div className="flex-1 border-b md:border-b-0 md:border-r border-white/20 px-4 pb-4 md:pb-0">
                 <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Wilayah Operasi</label>
                 <p className="text-[12px] font-bold text-white leading-tight">Makassar & Gowa, Sulawesi Selatan</p>
               </div>
-              <div className="flex-1 px-4">
+              <div className="flex-1 px-4 pb-4 md:pb-0">
                 <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Estimasi Skala</label>
                 <p className="text-[12px] font-bold italic text-white leading-tight">Proyek Strategis</p>
               </div>
-              <div className="ml-2">
+              <div className="ml-0 md:ml-2 mt-2 md:mt-0">
                 <motion.a 
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   href="https://wa.me/6287841780609?text=Halo%20Azzahra%20Celebes,%20saya%20ingin%20konsultasi%20mengenai%20pengadaan%20barang/jasa."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#C1211E] hover:bg-[#A01B18] text-white px-6 py-3 rounded-lg font-black text-[10px] tracking-widest uppercase transition-all shadow-lg shadow-black/40 inline-block"
+                  className="bg-[#C1211E] hover:bg-[#A01B18] text-white px-6 py-4 md:py-3 rounded-lg font-black text-[10px] tracking-widest uppercase transition-all shadow-lg shadow-black/40 inline-block w-full md:w-auto text-center"
                 >
                   Konsultasi
                 </motion.a>
