@@ -925,7 +925,10 @@ export default function App() {
               </button>
             </div>
             <div className="p-6 text-center bg-gradient-to-b from-white/5 to-transparent">
-              <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em] text-[#FFCC99] block mb-2">{selectedProduct.price}</span>
+              {/* Enlarged Price Tag */}
+              <span className="text-lg md:text-xl font-black text-[#FFCC99] block mb-3 tracking-tight">
+                {selectedProduct.price}
+              </span>
               <h3 className="text-xl md:text-2xl font-serif font-bold text-white mb-3 md:mb-4">{selectedProduct.label}</h3>
               <p className="text-white/70 leading-relaxed text-xs md:text-sm font-medium px-2">
                 {selectedProduct.desc}
