@@ -258,7 +258,7 @@ export default function App() {
         <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen md:min-h-[70vh] flex items-center pt-32 pb-20 md:pt-24 md:pb-12 overflow-hidden">
+      <section className="relative min-h-screen md:min-h-[70vh] flex items-center pt-32 pb-20 md:pt-24 md:pb-12">
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -286,44 +286,44 @@ export default function App() {
             >
               Mitra terpercaya dalam pengadaan barang dan jasa yang menghadirkan solusi berkualitas, harga kompetitif, dan layanan profesional untuk memenuhi setiap kebutuhan anda.
             </motion.p>
-
-            {/* Restored Category Info Widget - Sleek & Left-Aligned */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-              className="flex flex-col md:flex-row w-full max-w-4xl bg-black/40 backdrop-blur-md rounded-2xl p-6 items-stretch md:items-center justify-between gap-4 md:gap-2 border border-white/10 text-left shadow-2xl transition-transform hover:scale-[1.01] duration-500"
-            >
-              <div className="flex-1 border-b md:border-b-0 md:border-r border-white/20 px-4 pb-4 md:pb-0">
-                <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Kategori Jasa</label>
-                <p className="text-[12px] font-bold text-white leading-tight">Desain & Konstruksi Interior</p>
-              </div>
-              <div className="flex-1 border-b md:border-b-0 md:border-r border-white/20 px-4 pb-4 md:pb-0">
-                <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Kategori Barang</label>
-                <p className="text-[12px] font-bold text-white leading-tight">Alat Tulis Kantor, Kesehatan, & Lainnya</p>
-              </div>
-              <div className="flex-1 border-b md:border-b-0 md:border-r border-white/20 px-4 pb-4 md:pb-0">
-                <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Wilayah Operasi</label>
-                <p className="text-[12px] font-bold text-white leading-tight">Makassar & Gowa, Sulawesi Selatan</p>
-              </div>
-              <div className="flex-1 px-4 pb-4 md:pb-0">
-                <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Estimasi Skala</label>
-                <p className="text-[12px] font-bold italic text-white leading-tight">Proyek Strategis</p>
-              </div>
-              <div className="ml-0 md:ml-2 mt-2 md:mt-0">
-                <motion.a 
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  href="https://wa.me/6287841780609?text=Halo%20Azzahra%20Celebes,%20saya%20ingin%20konsultasi%20mengenai%20pengadaan%20barang/jasa."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#C1211E] hover:bg-[#A01B18] text-white px-6 py-4 md:py-3 rounded-lg font-black text-[10px] tracking-widest uppercase transition-all shadow-lg shadow-black/40 inline-block w-full md:w-auto text-center"
-                >
-                  Konsultasi
-                </motion.a>
-              </div>
-            </motion.div>
           </div>
+
+          {/* Moved Widget outside of text-left container for better mobile flow */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-12 flex flex-col md:flex-row w-full max-w-4xl bg-black/80 md:bg-black/40 backdrop-blur-xl md:backdrop-blur-md rounded-2xl p-6 items-stretch md:items-center justify-between gap-4 md:gap-2 border border-white/10 text-left shadow-2xl relative z-20"
+          >
+            <div className="flex-1 border-b md:border-b-0 md:border-r border-white/20 px-4 pb-4 md:pb-0">
+              <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Kategori Jasa</label>
+              <p className="text-[12px] font-bold text-white leading-tight">Desain & Konstruksi Interior</p>
+            </div>
+            <div className="flex-1 border-b md:border-b-0 md:border-r border-white/20 px-4 pb-4 md:pb-0">
+              <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Kategori Barang</label>
+              <p className="text-[12px] font-bold text-white leading-tight">Alat Tulis Kantor, Kesehatan, & Lainnya</p>
+            </div>
+            <div className="flex-1 border-b md:border-b-0 md:border-r border-white/20 px-4 pb-4 md:pb-0">
+              <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Wilayah Operasi</label>
+              <p className="text-[12px] font-bold text-white leading-tight">Makassar & Gowa, Sulawesi Selatan</p>
+            </div>
+            <div className="flex-1 px-4 pb-4 md:pb-0">
+              <label className="block text-[8px] uppercase tracking-wider text-white/50 font-black mb-1.5">Estimasi Skala</label>
+              <p className="text-[12px] font-bold italic text-white leading-tight">Proyek Strategis</p>
+            </div>
+            <div className="ml-0 md:ml-2 mt-2 md:mt-0">
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="https://wa.me/6287841780609?text=Halo%20Azzahra%20Celebes,%20saya%20ingin%20konsultasi%20mengenai%20pengadaan%20barang/jasa."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#C1211E] hover:bg-[#A01B18] text-white px-6 py-4 md:py-3 rounded-lg font-black text-[10px] tracking-widest uppercase transition-all shadow-lg shadow-black/40 inline-block w-full md:w-auto text-center"
+              >
+                Konsultasi
+              </motion.a>
+            </div>
+          </motion.div>
         </div>
       </section>
 
