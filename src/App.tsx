@@ -258,7 +258,7 @@ export default function App() {
         <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center pt-24 pb-12 overflow-hidden">
+      <section className="relative min-h-screen md:min-h-[70vh] flex items-center pt-32 pb-20 md:pt-24 md:pb-12 overflow-hidden">
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -282,7 +282,7 @@ export default function App() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="text-sm md:text-lg mb-20 text-white leading-relaxed max-w-3xl font-medium italic"
+              className="text-sm md:text-lg mb-10 md:mb-20 text-white leading-relaxed max-w-3xl font-medium italic"
             >
               Mitra terpercaya dalam pengadaan barang dan jasa yang menghadirkan solusi berkualitas, harga kompetitif, dan layanan profesional untuk memenuhi setiap kebutuhan anda.
             </motion.p>
